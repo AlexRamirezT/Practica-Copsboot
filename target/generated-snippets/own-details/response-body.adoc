@@ -1,0 +1,10 @@
+[source,json,options="nowrap"]
+----
+{
+  "subject" : "557703c2-a9a9-45de-844e-ea441fc6a3a3",
+  "claims" : {
+    "sub" : "557703c2-a9a9-45de-844e-ea441fc6a3a3",
+    "scope" : "read"
+  }
+}
+----

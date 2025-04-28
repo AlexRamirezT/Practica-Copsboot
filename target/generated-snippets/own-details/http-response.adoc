@@ -1,0 +1,15 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Length: 155
+
+{
+  "subject" : "557703c2-a9a9-45de-844e-ea441fc6a3a3",
+  "claims" : {
+    "sub" : "557703c2-a9a9-45de-844e-ea441fc6a3a3",
+    "scope" : "read"
+  }
+}
+----
