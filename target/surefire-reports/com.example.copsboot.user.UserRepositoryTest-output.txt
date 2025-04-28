@@ -1,0 +1,30 @@
+2025-04-26 22:34:14 INFO [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.copsboot.CopsbootApplication for test class com.example.copsboot.user.UserRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2025-04-26 22:34:14 INFO [main] UserRepositoryTest - Starting UserRepositoryTest using Java 17.0.14 with PID 16260 (started by Brayan Martínez in C:\Users\Brayan Martínez\Desktop\ramirez\copsboot)
+2025-04-26 22:34:14 DEBUG [main] UserRepositoryTest - Running with Spring Boot v3.2.2, Spring v6.1.3
+2025-04-26 22:34:14 INFO [main] UserRepositoryTest - The following 1 profile is active: "repository-test"
+2025-04-26 22:34:15 INFO [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-26 22:34:15 INFO [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 268 ms. Found 2 JPA repository interfaces.
+2025-04-26 22:34:15 INFO [main] HikariDataSource - HikariPool-3 - Starting...
+2025-04-26 22:34:16 INFO [main] HikariPool - HikariPool-3 - Added connection org.testcontainers.jdbc.ConnectionWrapper@fe15694
+2025-04-26 22:34:16 INFO [main] HikariDataSource - HikariPool-3 - Start completed.
+2025-04-26 22:34:16 INFO [main] FlywayExecutor - Database: jdbc:postgresql://localhost:62471/copsbootdb (PostgreSQL 16.8)
+2025-04-26 22:34:16 WARN [main] Database - Flyway upgrade recommended: PostgreSQL 16.8 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
+2025-04-26 22:34:16 INFO [main] DbValidate - Successfully validated 2 migrations (execution time 00:00.023s)
+2025-04-26 22:34:16 INFO [main] DbMigrate - Current version of schema "public": 1.0.0.2
+2025-04-26 22:34:16 INFO [main] DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-04-26 22:34:16 INFO [main] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-26 22:34:16 WARN [main] deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-26 22:34:17 INFO [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-26 22:34:17 INFO [main] UserRepositoryTest - Started UserRepositoryTest in 3.454 seconds (process running for 181.293)
+Hibernate: select u1_0.id,u1_0.auth_server_id,u1_0.email,u1_0.mobile_token from copsboot_user u1_0 where u1_0.id=?
+Hibernate: insert into copsboot_user (auth_server_id,email,mobile_token,id) values (?,?,?,?)
+Hibernate: select count(*) from copsboot_user u1_0
